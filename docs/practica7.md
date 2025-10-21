@@ -188,3 +188,7 @@ void loop() {
 >En esta práctica se logró implementar un **servidor web embebido en el ESP32**, permitiendo el **control remoto de tres LEDs** desde una página HTML.  
 > Se comprendió el uso de las librerías **WiFi.h** y **WebServer.h**, así como la creación de rutas específicas para ejecutar funciones dentro del microcontrolador.  
 > Este proyecto demuestra cómo el ESP32 puede actuar como un **microservidor autónomo**, aplicando conceptos de **comunicación cliente-servidor**, **HTML dinámico** y **control digital en tiempo real**, siendo una base sólida para futuros desarrollos en **domótica e IoT**.  
+
+## Evidencias del resultado final 📸
+
+![Diagrama del sistema](recursos/imgs/practica7.jpeg)
