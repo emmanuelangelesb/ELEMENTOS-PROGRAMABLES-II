@@ -1,4 +1,4 @@
-## 📚 Práctica 1 - NeoPixel_Básico
+# 📚 Práctica 1 - NeoPixel_Básico
 
 > El programa crea un efecto de parpedeo infinito de algun color que sepamos su "rgb", donde las personas no alcanzamos a distinguir. Ocupamos conceptos básicos de control de  LEDs RGB y temporización con delays. Es ideal si no comprendes el funcionamiento de los NeoPixels.
 >
