@@ -1,132 +1,72 @@
-# 📚 Práctica 7 - Práctica_ControlWeb_3LEDs_ESP32
-
-> El programa convierte al ESP32 en un servidor web que permite **controlar tres LEDs** mediante una interfaz accesible desde cualquier navegador conectado a la misma red Wi-Fi. Cada LED puede encenderse o apagarse a través de rutas HTTP específicas (/on, /off, /on1, /off1, /on2, /off2). Esta práctica enseña los principios de **comunicación cliente-servidor**, **manejo de pines digitales**, y **generación dinámica de contenido HTML**.
-
----
-
-## 1) Resumén 📌
-
-- **Equipo / Autor(es):** Jesús Cerezo  
-- **Curso / Asignatura:** Elementos Programables II  
-- **Fecha:** 21/10/25  
+# 📚 DOCUMENTACIÓN ELEMENTOS PROGRAMABLES II
+## Departamento de Ciencias e Ingeniería | Universidad Iberoamericana Puebla, México
+> En esta página se documentara cada proceso de aprendizaje durante la clase de Elementos Programables II  
+> 
 
 ---
 
-## 2) Código ⌨️
+## 1) Resumen
+
+- **Nombre del proyecto:** _Mi Proyecto_  
+- **Equipo / Autor(es):** _Nombre(s)_  
+- **Curso / Asignatura:** _Nombre del curso_  
+- **Fecha:** _DD/MM/AAAA_  
+- **Descripción breve:** _Una o dos líneas que expliquen qué hace y por qué._
+
+!!! tip "Consejo"
+    Mantén este resumen corto (máx. 5 líneas). Lo demás va en secciones específicas.
+
+---
+
+## 2) Objetivos
+
+- **General:** _Qué se pretende lograr en términos amplios._
+- **Específicos:**
+  - _OE1…_
+  - _OE2…_
+  - _OE3…_
+
+## 3) Alcance y Exclusiones
+
+- **Incluye:** _Qué funcionalidades/entregables sí están en el proyecto._
+- **No incluye:** _Qué queda fuera para evitar malentendidos._
+
+---
+
+## 4) Requisitos
+
+**Software**
+- _SO compatible (Windows/Linux/macOS)_
+- _Python 3.x / Node 18+ / Arduino IDE / etc._
+- _Dependencias (p. ej., pip/requirements, npm packages)_
+
+**Hardware (si aplica)**
+- _MCU / Sensores / Actuadores / Fuente de poder_
+- _Herramientas (multímetro, cautín, etc.)_
+
+**Conocimientos previos**
+- _Programación básica en X_
+- _Electrónica básica_
+- _Git/GitHub_
+
+---
+
+## 5) Instalación
 
 ```bash
-# Librerías necesarias para conexión Wi-Fi y servidor web
-include <WiFi.h>
-include <WebServer.h>
- 
-# Credenciales de red Wi-Fi
-const char* ssid = "iPhone";
-const char* password = "karennajera";
- 
-# Creación del servidor web en el puerto 80
-WebServer server(80);
- 
-# Definición de pines donde se conectan los LEDs
-const int ledPin = 20;  # LED 0
-const int ledPin1 = 19; # LED 1
-const int ledPin2 = 21; # LED 2
+# 1) Clonar
+git clone https://github.com/<usuario>/<repo>.git
+cd <repo>
 
-# Variables de estado de cada LED
-String ledState = "OFF";
-String ledState1 = "OFF";
-String ledState2 = "OFF";
- 
-# Función principal que genera la página web
-void handleRoot() {
-  /*
-   La función crea una página HTML con botones que permiten encender y apagar
-   los LEDs. Cada botón redirige a una URL específica (/on, /off, /on1, /off1, etc.)
-   que activa las funciones correspondientes.
-  */
-  String html = "<!DOCTYPE html><html><head><meta charset='UTF-8'><title>ESP32 LED Control</title></head><body>";
-  html += "<h1>ESP32 LED Control</h1>";
-  html += "<p>LED is " + ledState + "</p>";
-  if (ledState == "OFF")
-    html += "<a href=\"/on\"><button>Turn On</button></a>";
-  else
-    html += "<a href=\"/off\"><button>Turn Off</button></a>";
-  html += "</body></html>";
-  server.send(200, "text/html", html);
-}
- 
-# Función para encender LED0
-void handleOn() {
-  digitalWrite(ledPin, HIGH);
-  ledState = "ON";
-  handleRoot();  # Refresca la página con el nuevo estado
-}
+# 2) (Opcional) Crear entorno virtual
+python -m venv .venv
+# macOS/Linux
+source .venv/bin/activate
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
 
-# Función para apagar LED0
-void handleOff() {
-  digitalWrite(ledPin, LOW);
-  ledState = "OFF";
-  handleRoot();  # Refresca la página con el nuevo estado
-}
-
-# Funciones para LED1
-void handleOn1() {
-  digitalWrite(ledPin1, HIGH);
-  ledState1 = "ON";
-  handleRoot();
-}
-void handleOff1() {
-  digitalWrite(ledPin1, LOW);
-  ledState1 = "OFF";
-  handleRoot();
-}
-
-# Funciones para LED2
-void handleOn2() {
-  digitalWrite(ledPin2, HIGH);
-  ledState2 = "ON";
-  handleRoot();
-}
-void handleOff2() {
-  digitalWrite(ledPin2, LOW);
-  ledState2 = "OFF";
-  handleRoot();
-}
-
-# Configuración inicial del sistema
-void setup() {
-  Serial.begin(115200);
-  pinMode(ledPin, OUTPUT);
-  digitalWrite(ledPin, LOW);
- 
-  pinMode(ledPin1, OUTPUT);
-  digitalWrite(ledPin1, LOW);
- 
-  pinMode(ledPin2, OUTPUT);
-  digitalWrite(ledPin2, LOW);
- 
-  # Conexión Wi-Fi
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("\nWiFi connected");
-  Serial.println(WiFi.localIP());
- 
-  # Definición de rutas del servidor web
-  server.on("/", handleRoot);
-  server.on("/on", handleOn);
-  server.on("/off", handleOff);
-  server.on("/on1", handleOn1);
-  server.on("/off1", handleOff1);
-  server.on("/on2", handleOn2);
-  server.on("/off2", handleOff2);
- 
-  server.begin();
-  Serial.println("Server started");
-}
- 
-# Bucle principal que mantiene el servidor activo
-void loop() {
-  server.handleClient();
-}
+# 3) Instalar dependencias (ejemplos)
+pip install -r requirements.txt
+# o, si es Node:
+npm install
+```
