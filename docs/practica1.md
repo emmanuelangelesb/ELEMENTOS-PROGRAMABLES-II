@@ -63,6 +63,7 @@ void loop(){
   
   # El ciclo se repite: el LED se apaga brevemente y vuelve a encender, creando un efecto de parpadeo en color morado
 }
+
 ```
 ---
 
