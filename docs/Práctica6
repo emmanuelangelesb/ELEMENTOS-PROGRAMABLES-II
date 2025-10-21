@@ -1,0 +1,54 @@
+# 📚 Práctica 4 - 
+> Aqui explicare lo que el codigo realizara (pero no linea por linea), de que fue la clase, como funciona, curiosidades y eso 
+
+---
+
+## 1) Resumén 📌
+
+- **Nombre del proyecto:** _Mi Proyecto_  
+- **Equipo / Autor(es):** Emmanuel Angeles Barreto
+- **Curso / Asignatura:** Elementos Programables II  
+- **Fecha:** 23/09/25  
+- **Descripción breve:** _Una o dos líneas que expliquen qué hace y por qué._
+
+---
+## 2) Objetivos 🎯
+
+- **General:** _Qué se pretende lograr en términos amplios._
+- **Específicos:**
+  - _OE1…_
+  - _OE2…_
+  - _OE3…_
+
+---
+
+## 3) Código ⌨️
+
+```bash
+# 1) Clonar
+git clone https://github.com/<usuario>/<repo>.git
+cd <repo>
+
+# 2) (Opcional) Crear entorno virtual
+python -m venv .venv
+# macOS/Linux
+source .venv/bin/activate
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# 3) Instalar dependencias (ejemplos)
+pip install -r requirements.txt
+# o, si es Node:
+npm install
+```
+# Resumén del código 🔎
+
+> Aqui explicare lo que el código en la lineas mas importantes
+
+---
+
+# Evidencias del resultado final 📸
+
+> Aqui explicare lo que el código en la lineas mas importantes
+
+---
