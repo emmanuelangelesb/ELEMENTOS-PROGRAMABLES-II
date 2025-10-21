@@ -1,7 +1,7 @@
-# 📚 Ejemplo de Documentación del Proyecto
-
-> Plantilla genérica para documentar proyectos académicos o de ingeniería.  
-> Copia y adapta las secciones según tu necesidad.
+# 📚 DOCUMENTACIÓN ELEMENTOS PROGRAMABLES II
+## Departamento de Ciencias e Ingeniería | Universidad Iberoamericana Puebla, México
+> En esta página se documentara cada proceso de aprendizaje durante la clase de Elementos Programables II  
+> 
 
 ---
 

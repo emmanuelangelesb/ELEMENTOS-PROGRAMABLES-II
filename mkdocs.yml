@@ -1,4 +1,4 @@
-site_name: Plantilla para Documentación
+site_name: DOCUMENTACIÓN ELEMENTOS PROGRAMABLES II
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -29,7 +29,7 @@ theme:
   highlightjs: true 
   palette:
       - scheme: default
-        primary: red
+        primary: dark turquoise blue
 
   features:
     - content.code.copy
