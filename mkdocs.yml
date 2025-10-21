@@ -28,8 +28,10 @@ theme:
   name: material
   highlightjs: true 
   palette:
-      - scheme: default
-        primary: dark turquoise blue
+      - scheme: slate
+        primary: teal
+        accent: amber
+
 
   features:
     - content.code.copy
