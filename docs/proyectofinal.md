@@ -68,10 +68,7 @@
 
 <img src="../recursos/imgs/join.png" alt="UNIÓN PRINCIPAL CON LA BASE" width="420">
 
-
-[doc-ref]: https://youtube.com/shorts/WnF7HWzzdtk?si=j-RTy-IzCXZE6-UW "VIDEO MUESTRA DE FUNCIONAMIENTO #1"
-
-[doc-ref]: https://youtu.be/gdQYubV8pa8?si=zO2AAfMCcSxY7Gl_ "VIDEO MUESTRA DE FUNCIONAMIENTO #2"
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gdQYubV8pa8?si=__M2xqgo7Hh9pdnf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ---
