@@ -22,8 +22,7 @@
 ---
 ## 2) Instalación
 
-- Seguir el siguiente link, para poder realizar el código:
-[Enlace directo](https://iberopuebla.sharepoint.com/:p:/s/Section_11192A-O25/Eagdi_tzhWZMgKc8luT4Fi0BwHxjPm1VrXFUaZsVAG4fsw?e=HB032a) "Instalación pybluez2"
+- Seguir el siguiente link, para poder realizar el código: https://iberopuebla.sharepoint.com/:p:/s/Section_11192A-O25/Eagdi_tzhWZMgKc8luT4Fi0BwHxjPm1VrXFUaZsVAG4fsw?e=HB032a
 
 ---
 ## 2) Requisitos
