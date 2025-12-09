@@ -1,4 +1,4 @@
-# 📚 Práctica 3 - Práctica_ComunicaciónSerial_NeoPixel
+# 📚 Práctica 4 - Práctica_ComunicaciónSerial_NeoPixel
 
 > El programa convierte el ESP32 en un "asistente de colores", que entiende comandos en "español", procesa la información usando funciones como indexof() y substring() para entender comandos. Es importante saber esto pues enseña conceptos de comunicación entre dispositivos (hardaware externo), como procesar datos de texto y uso de librerias.
 

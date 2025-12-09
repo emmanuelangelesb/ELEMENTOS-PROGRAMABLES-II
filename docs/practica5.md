@@ -1,4 +1,4 @@
-# 📚PRACTICA 6 - Comunicación_BLE_Básica
+# 📚PRACTICA 5 - Comunicación_BLE_Básica
 
 ---
 

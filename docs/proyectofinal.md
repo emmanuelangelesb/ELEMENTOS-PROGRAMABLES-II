@@ -58,7 +58,22 @@
 
 <img src="../recursos/imgs/plataforma.png" alt="ESTRUCTURA PRINCIPAL DE LA BASE" width="420">
 
+- La pieza mostrada corresponde a la base central del proyecto.Su geometría se compone de un contenedor con forma poligonal, con paredes altas que brindan rigidez estructural y evitan la deformación durante el movimiento. En su periferia integra tres soportes elevados con huecos de montaje, los cuales permiten fijar servomotores de rotación.
 
+<img src="../recursos/imgs/brazos.png" alt="BRAZO PRINCIPAL QUE DA MOVIMIENTO A LOS SERVOS" width="420">
+
+- Esta pieza funciona como vínculo mecánico entre el servomotor y la base. Su forma alargada permite transmitir el movimiento generado por el servo hacia la estructura central. Cuenta con dos orificios de unión: uno con forma ovalada, que facilita el acoplamiento y reduce fricción con el eje del servo, y otro circular, destinado a la conexión mediante tornillo con la base.
+
+<img src="../recursos/imgs/brazosx2.png" alt="BRAZO SECUNDARIO A LA BASE" width="420">
+
+- Esta pieza corresponde al brazo principal de soporte, encargado de conectar la parte superior del sistema con los servomotores. Su geometría alargada proporciona mayor alcance y movimiento, permitiendo que la plataforma superior cambie de inclinación. El brazo incluye dos orificios en los extremos, usados como puntos de articulación con tornillos. Además, cuenta con una ranura longitudinal, que facilita el montaje del tornillo.
+
+<img src="../recursos/imgs/join.png" alt="UNIÓN PRINCIPAL CON LA BASE" width="420">
+
+- VIDEOMUESTRA
+
+[doc-ref]: https://youtube.com/shorts/WnF7HWzzdtk?si=j-RTy-IzCXZE6-UW "VIDEO MUESTRA DE FUNCIONAMIENTO #1"
+[doc-ref]: https://youtu.be/gdQYubV8pa8?si=zO2AAfMCcSxY7Gl_ "VIDEO MUESTRA DE FUNCIONAMIENTO #2"
 
 ---
 ## 3) Código ⌨️
@@ -631,3 +646,4 @@ void loop() {
 }
 
 ```
+
