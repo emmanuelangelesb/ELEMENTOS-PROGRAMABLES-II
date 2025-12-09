@@ -22,12 +22,10 @@
 ---
 ## 2) Instalación
 
-```bash
+- Seguir el siguiente link, para poder realizar el código:
 
-# 1) Seguir el siguiente link, para poder realizar el código:
 [doc-ref]: https://iberopuebla.sharepoint.com/:p:/s/Section_11192A-O25/Eagdi_tzhWZMgKc8luT4Fi0BwHxjPm1VrXFUaZsVAG4fsw?e=aVqLTr "Instalación pybluez2"
 
-```
 ---
 ## 2) Requisitos
 
@@ -72,8 +70,9 @@
 
 - VIDEOMUESTRA
 
-[doc-ref]: https://youtube.com/shorts/WnF7HWzzdtk?si=j-RTy-IzCXZE6-UW "VIDEO MUESTRA DE FUNCIONAMIENTO #1"
-[doc-ref]: https://youtu.be/gdQYubV8pa8?si=zO2AAfMCcSxY7Gl_ "VIDEO MUESTRA DE FUNCIONAMIENTO #2"
+https://youtube.com/shorts/WnF7HWzzdtk?si=j-RTy-IzCXZE6-UW "VIDEO MUESTRA DE FUNCIONAMIENTO #1"
+
+https://youtu.be/gdQYubV8pa8?si=zO2AAfMCcSxY7Gl_ "VIDEO MUESTRA DE FUNCIONAMIENTO #2"
 
 ---
 ## 3) Código ⌨️
