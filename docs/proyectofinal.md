@@ -68,11 +68,11 @@
 
 <img src="../recursos/imgs/join.png" alt="UNIÓN PRINCIPAL CON LA BASE" width="420">
 
-- VIDEOMUESTRA
 
-https://youtube.com/shorts/WnF7HWzzdtk?si=j-RTy-IzCXZE6-UW "VIDEO MUESTRA DE FUNCIONAMIENTO #1"
+[doc-ref]: https://youtube.com/shorts/WnF7HWzzdtk?si=j-RTy-IzCXZE6-UW "VIDEO MUESTRA DE FUNCIONAMIENTO #1"
 
-https://youtu.be/gdQYubV8pa8?si=zO2AAfMCcSxY7Gl_ "VIDEO MUESTRA DE FUNCIONAMIENTO #2"
+[doc-ref]: https://youtu.be/gdQYubV8pa8?si=zO2AAfMCcSxY7Gl_ "VIDEO MUESTRA DE FUNCIONAMIENTO #2"
+
 
 ---
 ## 3) Código ⌨️
